@@ -1,4 +1,15 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        lifecycle_version = "2.5.0-alpha02"
+        retrofit2_version = "2.9.0"
+
+        //Test versions
+        androidx_junit = "1.1.3"
+        androidx_espresso_core = "3.4.0"
+    }
+}
+
 plugins {
     id 'com.android.application' version '7.1.3' apply false
     id 'com.android.library' version '7.1.3' apply false
